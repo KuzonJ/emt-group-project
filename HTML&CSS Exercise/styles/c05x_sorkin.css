@@ -1,0 +1,87 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+/* Page background */
+html {
+  background-color: yellow;
+}
+
+/* Main content box */
+body {
+  width: 650px;
+  margin: 0 auto;
+  background-color: white;
+  border: 6px double blue;
+  padding: 20px;
+}
+
+/* Footer border separation */
+footer {
+  border-top: 3px solid blue;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/* Headings */
+h1 {
+  font-size: 28px;
+  color: blue;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 15px 0 8px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 12px 0 6px;
+}
+
+/* Text spacing */
+p {
+  margin: 10px 0;
+}
+
+blockquote {
+  margin: 15px 0;
+}
+
+ul {
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
+li {
+  margin: 5px 0;
+  padding-left: 0;
+}
+
+/* Citation styling */
+cite {
+  color: blue;
+  font-style: normal;
+}
+
+/* Right-align citation lines */
+.right {
+  text-align: right;
+}
+
+/* Float image */
+img {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+
+/* Footer text formatting */
+footer p {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
