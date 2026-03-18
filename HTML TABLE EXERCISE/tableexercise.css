@@ -1,0 +1,125 @@
+:root{
+  --yellow: #ffff00;
+  --black: #000;
+  --frame: #8a8a8a;
+}
+
+body{
+  margin: 0;
+  background: #fff;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  padding: 40px 0 70px;
+}
+
+/* Outer light rectangle around each table */
+.frame{
+  width: 820px;
+  margin: 0 auto 70px;
+  border: 1px solid var(--frame);
+  padding: 30px;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+/* Top box is a bit shorter in the screenshot */
+.frame-small{
+  padding-top: 26px;
+  padding-bottom: 26px;
+  margin: 0 auto 70px 300px;
+}
+
+/* Bottom box has more top space before the title */
+.frame-big{
+  padding-top: 42px;
+  padding-bottom: 40px;
+  width: 990px; 
+}
+
+/* Title */
+h1{
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+/* Base table look */
+.grid{
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--black);      /* thick outer border */
+  table-layout: fixed;
+}
+
+.grid th,
+.grid td{
+  border: 1px solid var(--black);      /* inner grid lines */
+  padding: 9px 10px;
+  font-size: 20px;
+  line-height: 1.05;
+  vertical-align: middle;
+}
+
+.grid thead th{
+  background: var(--yellow);
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Right-aligned numbers */
+.num{
+  text-align: right;
+  padding-right: 14px;
+}
+
+/* Column widths (top table) */
+.w-name{ width: 180px; }
+.w-email{ width: 290px; }
+.w-years{ width: 170px; }
+
+/* Make the top table slightly narrower (like screenshot) */
+.grid-small{
+  width: 660px;
+  
+}
+
+/* Highlight entire rows (top table) */
+.row-hi td{
+  background: var(--yellow);
+  
+}
+
+/* Column widths (bottom table) */
+.w-dept{  width: 190px; }
+.w-name2{ width: 180px; }
+.w-email2{ width: 280px; }
+.w-years2{ width: 170px; }
+
+/* Department cells: bold and top-aligned in their rowspan block */
+.dept{
+  font-weight: 700;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+/* Highlight only certain cells (bottom table) */
+.cell-hi{
+  background: var(--yellow);
+  
+}
+
+/* Total row */
+.total td{
+  background: var(--yellow);
+  font-weight: 700;
+}
+
+.total-label{
+  text-align: right;
+  padding-right: 14px;
+}
+
+.total-num{
+  padding-right: 14px;
+}

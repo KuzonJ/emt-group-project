@@ -1,0 +1,151 @@
+html {
+    background-image: url("bats.gif");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 0 0 10px 5px black;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background: linear-gradient(45deg, white, orange, black);
+    border-bottom: 2px solid black;
+}
+
+header img {
+    margin-right: 1em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#nav_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: black;
+}
+
+#nav_menu ul li {
+    flex: 1;
+}
+
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    color: white;
+    text-decoration: none;
+}
+
+#nav_menu ul li a.current {
+    color: orange;
+}
+
+#nav_menu ul li a:hover {
+    background-color: gray;
+}
+
+main {
+    display: flex;
+    padding: 1.5em 1em;
+}
+
+aside {
+    width: 160px;
+    margin-right: 2em;
+}
+
+#side_menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#side_menu ul li {
+    margin-bottom: .6em;
+}
+
+#side_menu ul li a {
+    display: block;
+    padding: .75em;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+section {
+    flex: 1;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 1.9em;
+}
+
+section h2::first-letter {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+section h3 {
+    font-size: 1.4em;
+    margin-bottom: .5em;
+}
+
+.featured_cat {
+    display: block;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+.product_link {
+    color: orange;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    border-top: 2px solid black;
+    background: linear-gradient(45deg, black, orange, white);
+}
+
+/* max-width 800px */
+@media screen and (max-width: 800px) {
+    html {
+        background-image: none;
+    }
+
+    body {
+        border: none;
+        box-shadow: none;
+        font-size: 0.5em;
+    }
+}
+
+/* max-width 479px */
+@media screen and (max-width: 479px) {
+    header h1,
+    header h2,
+    section h2 {
+        font-size: 1.2em;
+    }
+}

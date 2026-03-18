@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Tables</title>
+  <link rel="stylesheet" href="tableexercise.css" />
+</head>
+<body>
+
+  <!-- ===== TOP TABLE (3 columns) ===== -->
+  <div class="frame frame-small">
+    <table class="grid grid-small">
+      <thead>
+        <tr>
+          <th class="w-name">Name</th>
+          <th class="w-email">E-mail</th>
+          <th class="w-years">Years of Service</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Joel Murach</td>
+          <td>joelmurach@yahoo.com</td>
+          <td class="num">22</td>
+        </tr>
+
+        <tr class="row-hi">
+          <td>Anne Boehm</td>
+          <td>anne@murach.com</td>
+          <td class="num">34</td>
+        </tr>
+
+        <tr>
+          <td>Zak Ruvalcaba</td>
+          <td>zak@modulemedia.com</td>
+          <td class="num">4</td>
+        </tr>
+
+        <tr class="row-hi">
+          <td>Judy Taylor</td>
+          <td>judy@murach.com</td>
+          <td class="num">39</td>
+        </tr>
+
+        <tr>
+          <td>Cyndi Vasquez</td>
+          <td>cyndi@murach.com</td>
+          <td class="num">10</td>
+        </tr>
+
+        <tr class="row-hi">
+          <td>Kelly Slivkoff</td>
+          <td>kelly@murach.com</td>
+          <td class="num">25</td>
+        </tr>
+
+        <tr>
+          <td>Juliette Baylon</td>
+          <td>juliette@murach.com</td>
+          <td class="num">1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- ===== BOTTOM TABLE (4 columns + title) ===== -->
+  <div class="frame frame-big">
+    <h1>Employee Table</h1>
+
+    <table class="grid">
+      <thead>
+        <tr>
+          <th class="w-dept">Department</th>
+          <th class="w-name2">Name</th>
+          <th class="w-email2">E-mail</th>
+          <th class="w-years2">Years of Service</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Editorial (3 rows) -->
+        <tr>
+          <td class="dept" rowspan="3">Editorial</td>
+          <td>Joel Murach</td>
+          <td>joelmurach@yahoo.com</td>
+          <td class="num">22</td>
+        </tr>
+        <tr>
+          <td class="cell-hi">Anne Boehm</td>
+          <td class="cell-hi">anne@murach.com</td>
+          <td class="num cell-hi">34</td>
+        </tr>
+        <tr>
+          <td>Zak Ruvalcaba</td>
+          <td>zak@modulemedia.com</td>
+          <td class="num">4</td>
+        </tr>
+
+        <!-- Marketing (2 rows) -->
+        <tr>
+          <td class="dept" rowspan="2">Marketing</td>
+          <td class="cell-hi">Judy Taylor</td>
+          <td class="cell-hi">judy@murach.com</td>
+          <td class="num cell-hi">39</td>
+        </tr>
+        <tr>
+          <td>Cyndi Vasquez</td>
+          <td>cyndi@murach.com</td>
+          <td class="num">10</td>
+        </tr>
+
+        <!-- Customer Service (2 rows) -->
+        <tr>
+          <td class="dept" rowspan="2">Customer Service</td>
+          <td class="cell-hi">Kelly Slivkoff</td>
+          <td class="cell-hi">kelly@murach.com</td>
+          <td class="num cell-hi">25</td>
+        </tr>
+        <tr>
+          <td>Juliette Baylon</td>
+          <td>juliette@murach.com</td>
+          <td class="num">1</td>
+        </tr>
+
+        <!-- Total row -->
+        <tr class="total">
+          <td colspan="3" class="total-label">Total Years of Service</td>
+          <td class="num total-num">105</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

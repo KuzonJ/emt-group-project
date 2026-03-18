@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/bats.gif");
+    background-repeat: repeat;
+    margin: 0;
+}
+
+
+.page {
+    width: 900px;
+    height: 700px;
+    margin: 20px auto;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 0 20px 40px 20px black;
+}
+
+/* HEADER */
+header {
+    padding: 20px;
+    border-bottom: 3px solid black;
+
+    /* Gradient */
+    background: linear-gradient(45deg, white, orange, black);
+}
+
+/* Float pumpkin image left */
+header img {
+    float: left;
+    margin-right: 20px;
+}
+
+/* Indent headings */
+header h1,
+header h2 {
+    margin-left: 80px;
+}
+
+/* First heading style */
+header h1 {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+    margin: 0;
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 20px;
+}
+
+/* Larger first letter of first main heading */
+main h1::first-letter {
+    font-size: 250%;
+    font-weight: bold;
+}
+
+/* Links styling */
+a {
+    font-weight: bold;
+    color: orange;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: green;
+}
+
+/* Increase spacing between list items */
+ul li {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+    border-top: 3px solid black;
+
+    /* Reverse gradient */
+    background: linear-gradient(45deg, black, orange, white);
+}
+
+/* Product category links */
+main ul li a {
+    color: orange;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hover / focus turns green (still underlined) */
+main ul li a:hover,
+main ul li a:focus {
+    color: green;
+}
+
+header h2 {
+    margin: 5px 0 0 0;
+    font-weight: normal;
+}
+

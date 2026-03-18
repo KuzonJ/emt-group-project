@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Requirement #2: Text that appears on the browser tab -->
+  <title>Emmanuel Ayodeji - Personal Profile</title>
+
+  <!-- Requirement #7 (internal/in-head CSS): small styles here -->
+  <style>
+    /* Internal CSS: quick page-wide defaults */
+    .tagline {
+      font-style: italic;
+      margin-top: 0.25rem;
+    }
+  </style>
+
+  <!-- Requirement #7 (external CSS): link to styles.css -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Meaningful HTML comment (Requirement #9) -->
+  <!-- Main wrapper keeps content centered and readable -->
+  <div class="page">
+
+    <!-- Requirement #8: semantic elements (header/main/section/footer etc.) -->
+    <header class="site-header">
+      <!-- Requirement #4: proper semantic headings -->
+      <h1>Emmanuel Ayodeji</h1>
+
+      <!-- Requirement #7 (inline CSS): demonstrate inline styling -->
+      <p class="tagline" style="letter-spacing: 0.5px;">
+        Personal Profile Web Page (CPAN 134)
+      </p>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>About Me</h2>
+
+        <!-- Requirement #3 + #10: photo + alt attribute -->
+        <figure class="profile-figure">
+          <img
+            src="images/Emmanuel.jpg"
+            alt="Photo of Emmanuel Ayodeji, aspiring software developer"
+            width="260"
+            height="260"
+          />
+          <figcaption>Future Computer Programming &amp; Analysis student in Toronto.</figcaption>
+        </figure>
+
+        <!-- Requirement #5: at least two paragraphs -->
+        <p>
+          Hi! My name is Emmanuel Ayodeji. I’m currently building my skills in HTML and CSS and learning how to
+          structure web pages using semantic elements like headers, sections, and footers. I enjoy creating clean,
+          organized layouts that are easy to read and navigate.
+        </p>
+
+        <p>
+          Outside of school, I’m interested in technology devices, i love photography, anime, videogames and since moving to
+          Toronto i have my sight set on trying snowboarding. Computer Programming and Analysis hasn't been easy so far with 
+          a ton of catching up and things to understand. My goal is to become confident building websites that look professional 
+          and work well on different screen sizes. This page is a simple introduction, but I plan to keep improving it as I learn more.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Interests &amp; Goals</h2>
+
+        <ul class="interests">
+          <li>Learning web development (HTML, CSS, and JavaScript)</li>
+          <li>Building strong study habits and improving my GPA</li>
+          <li>Creating projects that I can add to a portfolio</li>
+        </ul>
+
+        <!-- Requirement #11: working hyperlink to an external site relevant to the subject -->
+        <p>
+          One site that motivates me to keep learning is
+          <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer">MDN Web Docs</a>
+          (great for HTML/CSS reference).
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <!-- Meaningful HTML comment (Requirement #9) -->
+      <!-- Footer contains authorship + course info -->
+      <p>&copy; 2026 Emmanuel Ayodeji | CPAN 134</p>
+    </footer>
+
+  </div>
+</body>
+</html>

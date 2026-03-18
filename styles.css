@@ -1,0 +1,109 @@
+/* Page */
+:root{
+  --yellow: #ffff00;
+  --border: #000;
+  --frame: #888;
+}
+
+body{
+  margin: 0;
+  padding: 40px 0 60px;
+  background: #fff;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+}
+
+/* Outer boxes that surround each table (the faint rectangle in the screenshot) */
+.frame{
+  width: 780px;
+  margin: 0 auto 60px;
+  padding: 26px 28px;
+  border: 1px solid var(--frame);
+  box-sizing: border-box;
+}
+
+.frame-large{
+  padding-top: 40px;
+}
+
+/* Headline for the second table */
+h1{
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Shared table styling */
+table{
+  border-collapse: collapse;
+  border: 2px solid var(--border);
+  width: 100%;
+  table-layout: fixed;
+}
+
+th, td{
+  border: 1px solid var(--border);
+  padding: 9px 10px;
+  font-size: 20px;
+  line-height: 1.05;
+  vertical-align: middle;
+}
+
+thead th{
+  background: var(--yellow);
+  text-align: left;
+  font-weight: 700;
+}
+
+.num{
+  text-align: right;
+  padding-right: 14px;
+}
+
+/* Column widths to match the proportions */
+.col-dept{ width: 185px; }
+.col-name{ width: 190px; }
+.col-email{ width: 285px; }
+.col-years{ width: 170px; }
+
+/* Table 1 is a bit narrower in the screenshot */
+.t1{
+  width: 640px;
+  margin: 0 auto;
+}
+
+/* Table 1 highlighted full rows */
+.highlight-all td{
+  background: var(--yellow);
+  font-weight: 700;
+}
+
+/* Table 2 department cells look bold and sit at the top of their group */
+.dept{
+  font-weight: 700;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+/* Table 2: only highlight the non-department cells */
+.highlight{
+  background: var(--yellow);
+  font-weight: 700;
+}
+
+/* Total row styling */
+.total-row td{
+  background: var(--yellow);
+  font-weight: 700;
+}
+
+.total-label{
+  text-align: center;
+}
+
+.total-num{
+  text-align: right;
+  padding-right: 14px;
+}

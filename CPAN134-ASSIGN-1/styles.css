@@ -1,0 +1,87 @@
+
+/* Requirement #6: specified background color */
+body {
+  background-color: aliceblue;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2937;
+}
+
+/* Wrapper to make the content look like a neat centered page */
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+/* Header styling */
+.site-header {
+  background: #ffffff;
+  border: 1px solid #d7dee8;
+  border-radius: 10px;
+  padding: 18px 18px 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Card sections */
+.card {
+  background: #ffffff;
+  border: 1px solid #d7dee8;
+  border-radius: 10px;
+  padding: 18px;
+  margin-top: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #e6edf7;
+  padding-bottom: 8px;
+}
+
+/* Profile image layout */
+.profile-figure {
+  margin: 12px 0 12px;
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+}
+
+.profile-figure img {
+  border-radius: 12px;
+  border: 2px solid #e6edf7;
+  display: block;
+}
+
+.profile-figure figcaption {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+/* Lists */
+.interests {
+  padding-left: 18px;
+}
+
+/* Links */
+a {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration-thickness: 3px;
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  margin-top: 22px;
+  color: #4b5563;
+  font-size: 0.95rem;
+}
