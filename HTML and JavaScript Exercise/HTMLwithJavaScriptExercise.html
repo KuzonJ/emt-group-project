@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            margin-top: 30px;
+            border: 1px solid #999;
+            display: none;
+        }
+
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Festival Page</h1>
+
+    <button onclick="showHalloween()">Halloween</button>
+    <button onclick="showChristmas()">Christmas</button>
+    <button onclick="showNewYear()">New Year</button>
+
+    <button onclick="hideContent()">Hide Halloween</button>
+    <button onclick="hideContent()">Hide Christmas</button>
+    <button onclick="hideContent()">Hide New Year</button>
+
+    <br>
+
+    <img id="festivalImage" src="" alt="Festival Image">
+    <p id="festivalInfo"></p>
+
+    <script>
+        function showHalloween() {
+            document.getElementById("festivalImage").src = "Images/halloween.jpg";
+            document.getElementById("festivalImage").style.display = "block";
+            document.getElementById("festivalInfo").innerText =
+                "Halloween is celebrated on October 31. People wear costumes. Kids go trick-or-treating. The thrill of the event is mostly celebrated at night";
+        }
+
+        function showChristmas() {
+            document.getElementById("festivalImage").src = "Images/christmas.jpg";
+            document.getElementById("festivalImage").style.display = "block";
+            document.getElementById("festivalInfo").innerText =
+                "Christmas is celebrated on December 25 of every year. It is to celebrate the birth of Jesus Christ which majourity of christians participate in.";
+        }
+
+        function showNewYear() {
+            document.getElementById("festivalImage").src = "Images/newyear.jpg";
+            document.getElementById("festivalImage").style.display = "block";
+            document.getElementById("festivalInfo").innerText =
+                "New Year is celebrated on January 1. People enjoy fireworks. It marks a fresh beginning. Fireworks is mostly tied to New Year where majour cities accross the world make a display show of fireworks.";
+        }
+
+        function hideContent() {
+            document.getElementById("festivalImage").style.display = "none";
+            document.getElementById("festivalImage").src = "";
+            document.getElementById("festivalInfo").innerText = "";
+        }
+    </script>
+
+</body>
+</html>

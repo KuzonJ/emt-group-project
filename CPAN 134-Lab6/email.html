@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Email</title>
+    <link rel="stylesheet" href="styles/email.css">
+</head>
+<body>
+
+<header>
+    <img src="images/pumpkin.gif" alt="Pumpkin" width="85">
+    <div>
+        <h1>The Halloween Store</h1>
+        <h2>For the little Goblin in all of us!</h2>
+    </div>
+</header>
+
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Product List</a></li>
+        <li><a href="#">Personal</a></li>
+        <li><a href="#">Decorating Ideas</a></li>
+        <li><a href="email.html" class="current">Join Email</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <aside>
+        <nav id="nav_list">
+            <ul>
+                <li><a href="#">Props</a></li>
+                <li><a href="#">Costumes</a></li>
+                <li><a href="#">Special FX</a></li>
+                <li><a href="#">Masks</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h2>Please enter the following information:</h2>
+
+        <form action="subscribe.html" method="get">
+            <label for="first_name">First name:</label>
+            <input type="text" id="first_name" name="first_name" required autofocus>
+
+            <label for="last_name">Last name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="zip">Zip Code:</label>
+            <input type="text" id="zip" name="zip" pattern="[0-9]{5}" placeholder="Optional but appreciated: 99999">
+
+            <label>&nbsp;</label>
+            <input type="submit" value="Subscribe" class="button">
+        </form>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2018 Ben Murach</p>
+</footer>
+
+</body>
+</html>
